@@ -14,7 +14,9 @@ namespace Store.Api.Controllers
         public CategoriaController(ICategoriaBL BLInjectable) : base(BLInjectable) { }
 
         [HttpGet]
-        public List<Categoria> Listar() =>
-            base.BLInjected.Listar();
+        public List<Categoria> Listar()
+        {
+           return  base.BLInjected.Listar();
+        }
     }
 }
