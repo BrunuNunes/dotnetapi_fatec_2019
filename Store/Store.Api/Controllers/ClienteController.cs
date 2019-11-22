@@ -17,7 +17,7 @@ namespace Store.Api.Controllers
 
         [HttpPost]
         public Cliente Inserir([FromBody] Cliente cliente) {
-            this.BLInjected.Inserir(cliente);
+            return this.BLInjected.Inserir(cliente);
         }
 
         [HttpPut]
